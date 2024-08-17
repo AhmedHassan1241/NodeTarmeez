@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First web page</title>
+    <style>
+        *{
+            margin-top: 10px;
+        }
+        .details{
+            padding-left: 10px;
+        }
+        @media screen and (max-width: 550px) {
+        .link {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to my page</h1>
+    <p style="text-align: center;">hello world</p>
+    <div class="details">
+        <p><b>- Name :</b> Ahmed Hassan Abd Elhameed</p>
+        <p><b>- Age  :</b> 25</p>
+        <p><b>- Track:</b> React Web</p>
+        <h1>Hello <%= name %></h1>
+        <p style="background-color: burlywood; padding: 10px; border-radius: 15px;"><%= numbers %></p>
+
+        <% if(name=="Hassan") {%>
+            <div>Name Is Ahmed</div>
+            <% } %>
+</div>
+    <img src="./root/image/istockphoto-1138005939-2048x2048.jpg" alt="Sheikh Zayed Grand Mosque" style="width: 100%;height:600px;">
+   <div class="link" style="padding: 10px 0; display: flex; justify-content: space-around;">
+    <a href="/root/pages/profile.html" target="_blank">Visit my link</a>
+    <a href="/root/pages/product.html" target="_blank">Product Page</a>
+    <br>
+    <br>
+</div>
+</body>
+</html>
